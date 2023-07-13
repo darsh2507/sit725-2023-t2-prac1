@@ -3,17 +3,27 @@
 <head>
     <title>SIT725</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <style>
+    #output {
+      margin-top: 10px;
+       font-size: 30px;
+    }
+  </style>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col s12">
-              <h1 id="header" class="center-align">Text in the middle</h1>
+           
+        <div>
+            <h1 i class="center-align" for="inputValue">Enter Something:</h1>
+            <input type="text" id="inputValue">
+        </div>
+  
+          <div class="col s12 center-align">
+                <a class="waves-effect waves-light btn" onclick="printValue()">Submit</a>
             </div>
-
-            <div class="col s12 center-align">
-                <a class="waves-effect waves-light btn" onclick="changeText()">Change Text</a>
-            </div>
+            
+            <div id="output"></div>
         </div>
     </div>
      <script src="script.js"></script>
