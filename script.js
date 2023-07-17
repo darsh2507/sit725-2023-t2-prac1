@@ -1,4 +1,8 @@
-function printValue() {
-    var inputValue = document.getElementById("inputValue").value;
-    document.getElementById("output").innerHTML = "You have entered: " + inputValue;
-  }
+function changeText() {
+
+  let textArray = ['Hi', 'is', 'there', 'any', 'hiring?'];
+  let randomNumber = Math.floor(Math.random() * textArray.length);
+  console.log(randomNumber);
+  document.getElementById('header').innerHTML = textArray[randomNumber];
+  
+}
